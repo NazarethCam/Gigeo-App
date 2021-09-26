@@ -1,0 +1,55 @@
+.profile {
+  padding: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid $isabelline;
+
+  &__user {
+    display: flex;
+    align-items: center;
+  }
+
+  &__pic {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+  }
+
+  &__info {
+    margin-left: 1.5rem;
+  }
+
+  &__name {
+    font-weight: 700;
+    margin-bottom: 0;
+    font-size: 1.3rem;
+  }
+
+  &__followers {
+    color: $quick-silver;
+    font-size: 1rem;
+    margin-bottom: 0;
+  }
+}
+
+  // Cambio Responsive  
+@media (max-width: $breakpoint-tablet) {
+  .profile {
+    justify-content: center;
+    border-bottom: none;
+  }
+
+  .profile__name {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+
+  .profile__followers {
+    font-size: 1.3rem;
+  }
+
+  .profile__buttons {
+    display: none;
+  }
+}
